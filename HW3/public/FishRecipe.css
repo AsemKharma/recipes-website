@@ -1,0 +1,184 @@
+.vertical-line{
+    display: inline-block;
+    border-left: 2px solid #73ad21;
+    margin: -3 10px;
+    height: 200px;
+    
+}
+#dish {
+display: inline;
+border-radius: 50%;
+max-width: 250px;
+
+}
+
+
+#indexdiv{
+/*    background-color: rgb(0, 255, 255); */
+    display:inline-block;
+
+    
+}
+#indexbody{
+    text-align: center;
+}
+
+body{
+    background-image:url(silverware.JPG);
+   
+    
+}
+
+
+
+#outerdivindex{
+
+    margin: auto;
+    padding-left: px;
+  width: 60%;
+/*   background-color: aqua; */
+}
+#all_good_recipes{
+    height: 20px;
+    border: solid;
+    border-width: 2px;
+    border-color:#73ad21 ;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 30px;
+    background-color:#F0F0F0 ;
+    margin-bottom: 20px;
+
+}
+#titleindex {
+    color: #a4a400;
+    ;
+}
+@media (max-width:1109px) {
+    #secondlineindex {
+        display: none;
+    }
+}
+@media (min-width:1109px) {
+    #thirdlineindex {
+        display:contents;
+    }
+}
+@media (max-width:845px) {
+    #thirdlineindex {
+        display:none;
+    }
+}
+@media (max-width:845px) {
+    #firstlineindex {
+        display:none;
+    }
+}
+html>#fishcss{
+    text-align: center;
+}
+#fishcss{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#fishcss>#fishdiv{
+ /*   background-color: rgb(0, 255, 255);  */
+    display:inline-block;
+    text-align: left;
+    margin: 0 auto;
+    
+
+
+}
+#fishtitle{
+    height: 30px;
+    border: solid;
+    border-width: 2px;
+    border-color:#73ad21 ;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    background-color:#F0F0F0 ;
+    margin-bottom: 20px;
+    color: #a4a400;
+
+}
+#fishsubtitle{
+    height: 30px;
+    border: solid;
+    border-width: 2px;
+    border-color:#73ad21 ;
+    border-radius: 25px;
+    max-width: 500px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    background-color:#F0F0F0 ;
+    margin-bottom: 20px;
+    color: #a4a400;
+
+}
+ul>li{
+    list-style-image: url(fish_icon_24.png);
+}
+
+
+.columns{
+    display: inline-block;
+ /*   background-color: burlywood; */
+    column-count: 3;
+    
+    column-rule: 2px solid #a4a400;
+}
+@media (max-width:1000px) {
+    .columns {
+        column-count: 2;    }
+}
+@media (max-width:700px) {
+    .columns {
+        column-count: 1;    }
+        
+        .dishfish{
+            width: 400px;
+        }
+}
+.dishfish {
+    display: inline;
+    border-radius: 50%;
+    
+    
+    }
+a{color:#a4a400 ;}
+hr{
+    max-width: 1024px;
+}
+
+#seecomment{
+    display: block;
+    margin: auto;
+}
+#hw3{
+    display: none;
+}
+#hw31{
+    display: none;
+}
+#commentsholder{
+    display:none;
+}
+
+
+
+
+
+
+
+

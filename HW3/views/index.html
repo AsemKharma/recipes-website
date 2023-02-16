@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FishRecipe.css">
+    <title>Document</title>
+</head>
+<body id="indexbody">
+    <div id="all_good_recipes"><p id="titleindex">All Awesome Ricepes</p></div>
+
+
+
+
+    
+    <div class="columns">
+        {% for i in list -%}
+         <div id="indexdiv"><a href="/recipes/{{i.id}}"><img id="dish" src={{i.image}} alt="Club Card"></a></div> <br><br>
+        {%- endfor %}
+
+
+        
+
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/FishRecipe.css">
+    <title>Document</title>
+</head>
+<body id="fishcss">
+
+
+    
+    <h1 id="fishtitle" >{{title}}</h1>
+    <h4 id="fishsubtitle" ><b>{{subtitle}}</b></h4>
+    <div id="fishdiv">
+    
+    
+    
+    <p><b>Makes</b> {{make}} <b>Cooks In</b> {{cook_time}} <b>Difficulty</b> {{difficulty}}</p>
+    </div>
+
+
+
+
+
+
+    <hr id="lined" style="color: red;"></hr>
+
+
+    <h4 id="fishsubtitle">INGREDIENTS</h4>
+
+
+
+
+<div class="columns">
+    
+    <img  class="dishfish" src="/{{image}}" width="360" height="150">
+    
+
+
+
+    
+    <ul style="text-align: left;">
+        {% for i in recipe -%}
+        <li>{{i.item}}</li>
+        {%- endfor %}
+    </ul>
+    
+</div>
+
+
+
+    <hr></hr>
+    <h4 id="fishsubtitle">METHOD</h4>
+    <div id="fishdiv" class="columns">
+    
+    <ol>
+        {% for b in method -%}
+        <li>{{b.step}}</li>
+        {%- endfor %}
+    </ol>
+
+</div>
+<hr>
+
+
+<h4 id="fishsubtitle">User Comment</h4>
+                                                            <button id="seecomment" >see comments</button>
+<div id="fishdiv">
+<fieldset id="hw3" style="width:430px">
+<legend>Enter a comment:</legend> 
+<label for="name"><b>Name:</b><br/></label>
+
+<input type="text" id="nameholder" name="name" size="55"><br />
+
+<label for="email"><b>Comment</b></label><br/>
+<textarea id="commentholder" type="text" name="email" placeholder="Enter your comment here . . ." rows="4" cols="53"></textarea><br />
+<img src="/PlusSign.jpg" id="addcommentsbutton" style="cursor:pointer" width="50" height="50">
+</fieldset>
+<h4 id="hw31">All comments:</h4>
+
+<blockquote id="commentsholder">
+
+    
+
+<!-- here should be the comments -->
+
+
+
+
+</blockquote>
+</div>
+
+
+<hr>
+
+
+<h4 id="fishsubtitle">Sign-up to receive new recipes:</h4>
+
+<div id="fishdiv">
+
+
+
+
+
+
+
+
+<fieldset  style="width:300px">
+    <legend>Personal Information</legend> 
+    <label for="name"><b>Name:</b></label>
+    
+    <input type="text" id="name" name="name" size="30"><br/><br/>
+    
+    <label for="email"><b>Email:</b></label>
+    <input type="email" name="email" placeholder="xxxx@domain.com" size="30"></input>
+  
+    </fieldset>
+    <br>
+    <fieldset style="width: 300px">
+        <legend>Type of Recipes</legend>
+        <label for="Breakfast">Breakfast</label> <input type="radio" id="Breakfast" name="recipes">
+        <label for="Lunch">Lunch</label> <input type="radio" id="Lunch" name="recipes">
+        <label for="Breakfast">Dinner</label> <input type="radio" id="Breakfast" name="recipes">
+    </fieldset>
+    <br>
+    <a href="mailto:xxxx@domain.com"><button>Sign-up</button></a>
+</div>
+
+
+
+    <hr>
+    <h4 id="fishsubtitle" >LINKS</h4>
+    <div id="fishdiv">
+    
+    <a href="https://www.google.com/search?q=fish+fingers+recipe&start=10">Search for other fish fingers recipes</a>
+    
+    <a href="mailto:s201938690@kfupm.edu.sa"><p> made by: Asem Kharma 201938690</p></a>
+</div>
+
+<script src="/frontend.js"></script>
+</body>
+
+</html>
